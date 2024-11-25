@@ -9,7 +9,16 @@ const Nabar = () => {
     isPending ? "pending" : isActive ? "text-green-600" : ""
   }
 >
-  Messages
+  Home
+</NavLink>
+
+    <NavLink
+  to="/shop"
+  className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "text-green-600" : ""
+  }
+>
+  Shop Now
 </NavLink>
 
     <NavLink
@@ -20,13 +29,14 @@ const Nabar = () => {
 >
   About Us
 </NavLink>
+
     <NavLink
   to="/dashboard"
   className={({ isActive, isPending }) =>
     isPending ? "pending" : isActive ? "text-green-600" : ""
   }
 >
-  About Us
+  Dashboard
 </NavLink>
     </>
   )
@@ -80,11 +90,11 @@ const Nabar = () => {
                 </li>
               </ul>
             </div>
-            <a className="btn btn-ghost text-xl">daisyUI</a>
+            <a className="btn btn-ghost text-xl text-green-600 font-semibold">Shining Car</a>
           </div>
           {/* larg device  */}
           <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal px-1">
+            <ul className="menu menu-horizontal px-1 space-x-5">
               {navLinks}
             </ul>
           </div>

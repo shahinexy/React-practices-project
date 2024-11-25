@@ -1,9 +1,10 @@
+import Hero from "./HomeComponent/Hero";
 
 const Home = () => {
     return (
-        <div>
-            This is home page
-        </div>
+        <main>
+            <Hero></Hero>
+        </main>
     );
 };
 
